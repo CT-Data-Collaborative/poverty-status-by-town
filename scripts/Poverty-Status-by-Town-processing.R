@@ -19,7 +19,7 @@ source('./scripts/acsHelpers.R')
 
 #Get state data
 geography=geo.make(state=09)
-yearlist=c(2017:2017)
+yearlist=c(2009:2018)
 span = 5
 col.names="pretty" 
 key="ed0e58d2538fb239f51e01643745e83f380582d7"
@@ -315,7 +315,7 @@ dataset <- dataset %>%
 
 write.table(
     dataset,
-    file.path("data", "poverty-status-by-town-TEST.csv"),
+    file.path("data", "poverty-status-by-town-2018.csv"),
     sep = ",",
     row.names = F,
     na = "-9999"
